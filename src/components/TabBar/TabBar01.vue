@@ -42,7 +42,6 @@ const itemClick = (index, item) => {
     align-items: center;
 
     &.active {
-      // color: red;
       color: var(--primary-color);
     }
 

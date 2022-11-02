@@ -5,5 +5,10 @@ import pinia from './stores'
 
 import "normalize.css"
 import "./assets/css/index.css"
+import useDirectives from './directives'
 
-createApp(App).use(router).use(pinia).mount('#app')
+
+const app = createApp(App)
+useDirectives(app)
+
+app.use(router).use(pinia).mount('#app')
